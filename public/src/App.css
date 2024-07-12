@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, #d0e8f2, #d1c4e9);
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.header {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #5c6bc0;
+}
+
+.subheader {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #7986cb;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.linkedin {
+    margin-top: 30px;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: #0e76a8;
+    font-size: 1.5em;
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.stars span {
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff;
+    animation: twinkle 1s infinite;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 2em;
+    }
+
+    .subheader {
+        font-size: 1em;
+    }
+
+    .content {
+        font-size: 1em;
+    }
+
+    .linkedin a {
+        font-size: 1em;
+    }
+}
